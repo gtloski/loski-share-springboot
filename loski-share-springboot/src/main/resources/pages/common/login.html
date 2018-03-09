@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>登陆</title>
 </head>
 <body>
-	<h1>欢迎登陆</h1>
+	<form action="/loski-share/login">
+		<div style="text-align: center;color: red" >
+		<#if msg??>
+			${msg}
+		</#if>
+		</div>
+		<label> 账号：</label>  <input type = "text" name="account" value="" /><br/>
+		<label> 密码：</label>  <input type = "text" name="password" value="" /><br/>
+		<input type = "submit" value = "提交">
+	</form>
 </body>
 </html>
